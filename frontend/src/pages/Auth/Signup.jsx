@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 import { useSignup } from "../../hooks/useSignup";
 
 // images
-import dashboard from "../../assets/images/dashboard-messaging.png";
-import logo from "../../assets/images/logo.png";
+import dashboard from "../../assets/images/preview.png";
+import logo from "../../assets/images/logo-blue.svg"; 
 
 // components
 import Loading from "../../components/Loading";
@@ -32,7 +32,7 @@ const Signup = () => {
 
             <h1 className="text-xl font-extrabold sm:text-3xl">
               {" "}
-              Odin Messaging App
+              Messaging App
             </h1>
           </header>
 
@@ -44,7 +44,7 @@ const Signup = () => {
               Already have an account?{" "}
               <Link
                 to="/login"
-                className="cursor-pointer font-bold text-primaryOrange"
+                className="cursor-pointer font-bold text-teal-600"
               >
                 Login.{" "}
               </Link>
@@ -98,7 +98,7 @@ const Signup = () => {
               />
             </label>
 
-            <button className="flex w-full items-center justify-center rounded-md bg-primaryOrange py-2.5 font-semibold text-white">
+            <button className="flex w-full items-center justify-center rounded-md bg-teal-600 py-2.5 font-semibold text-white">
               {isPending ? (
                 <Loading loadingColor="#ffffff" loadingSize={30} />
               ) : (
@@ -109,17 +109,12 @@ const Signup = () => {
             {error && (
               <Error
                 error={error}
-                errorColor={"text-primaryOrange"}
+                errorColor={"text-teal-600"}
                 errorSize={"sm:text-lg"}
               />
             )}
           </form>
         </div>
-      </section>
-
-      {/* Image */}
-      <section className="hidden w-[60%] xl:block">
-        <img src={dashboard} alt="login image" className="h-full w-full" />
       </section>
     </main>
   );

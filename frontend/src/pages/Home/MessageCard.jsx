@@ -43,7 +43,7 @@ const MessageCard = ({
               setIsHoverDeleteMessage(false);
               setIsDeleteMessage(false);
             }}
-            className="flex max-w-[500px] justify-between gap-1 rounded-b-lg rounded-tr-lg bg-primaryOrange p-3 text-sm text-white shadow-md"
+            className="flex max-w-[500px] justify-between gap-1 rounded-b-lg rounded-tr-lg bg-teal-600 p-3 text-sm text-white shadow-md"
           >
             <span className="text-justify">{message.content} </span>
             {isHoverDeleteMessage && (

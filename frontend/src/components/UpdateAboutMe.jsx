@@ -45,13 +45,13 @@ const UpdateAboutMe = ({ userProfile, setIsUpdateAboutMe, setUserProfile }) => {
       <div className="flex flex-col gap-2 px-2">
         <header className="flex w-full items-center justify-between border-b-[1px] border-zinc-200 pb-1 ">
           {" "}
-          <h3 className="text-xl font-semibold text-primaryOrange sm:text-2xl ">
+          <h3 className="text-xl font-semibold text-teal-600 sm:text-2xl ">
             {" "}
             About Me{" "}
           </h3>
           <div className="flex items-center gap-2">
             <MdMode
-              className="cursor-pointer hover:text-primaryOrange sm:text-xl "
+              className="cursor-pointer hover:text-teal-600 sm:text-xl "
               onClick={() => {
                 setIsUpdateAboutText(true);
               }}
@@ -70,7 +70,7 @@ const UpdateAboutMe = ({ userProfile, setIsUpdateAboutMe, setUserProfile }) => {
         {isUpdateAboutText && (
           <textarea
             placeholder="About Me Text"
-            className="mt-1 resize-none rounded border-[2px] border-primaryOrange p-2 text-justify text-sm leading-relaxed outline-none sm:text-[16px]"
+            className="mt-1 resize-none rounded border-[2px] border-teal-600 p-2 text-justify text-sm leading-relaxed outline-none sm:text-[16px]"
             value={aboutText}
             onChange={(e) => setAboutText(e.target.value)}
           />
@@ -82,11 +82,11 @@ const UpdateAboutMe = ({ userProfile, setIsUpdateAboutMe, setUserProfile }) => {
           </p>
         )}
       </div>
-      {isPending && <Loading loadingColor={"#fa4d12"} />}
+      {isPending && <Loading loadingColor={"#a2c4c9"} />}
       {error && <Error error={error} />}
       {!isPending && !error && (
         <footer className="flex items-center justify-center">
-          <button className="flex items-center justify-center rounded bg-primaryOrange px-1.5 py-2 text-sm font-semibold text-white sm:px-4 sm:text-base">
+          <button className="flex items-center justify-center rounded bg-teal-600 px-1.5 py-2 text-sm font-semibold text-white sm:px-4 sm:text-base">
             {" "}
             Save Changes
           </button>

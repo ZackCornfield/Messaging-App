@@ -4,7 +4,7 @@ import { useAuthContext } from "../hooks/useAuthContext";
 import { useNavigate } from "react-router-dom";
 
 // images
-import logo from "../assets/images/logo.png";
+import logo from "../assets/images/logo-blue.svg";
 import defaultProfile from "../assets/images/defaultProfile.png";
 
 // icons
@@ -38,7 +38,7 @@ const Sidebar = () => {
         <Toast
           toastNotification={toastNotification}
           setToastNotification={setToastNotification}
-          bgColor={"bg-primaryOrange"}
+          bgColor={"bg-teal-800"} 
           textColor={"text-white"}
           elementType={"Icon"}
         />
@@ -66,7 +66,7 @@ const Sidebar = () => {
           {user && (
             <div
               className="h-8 w-8 cursor-pointer xmd:h-12 xmd:w-12"
-              onClick={() => navigate("/profile/64e5f514be01e5666f6e75de")}
+              onClick={() => navigate(`/profile/${user._id}`)}
             >
               <img
                 src={user.profileImg.url ? user.profileImg.url : defaultProfile}

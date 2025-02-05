@@ -31,7 +31,7 @@ const UserMessagesList = ({
       <section className="flex h-[92%] flex-col overflow-y-auto">
         {isPending && (
           <Loading
-            loadingColor={"#fa4d12"}
+            loadingColor={"#a2c4c9"}
             loadingSize={55}
             loadingHeight={"h-screen"}
           />
@@ -39,7 +39,7 @@ const UserMessagesList = ({
         {error && (
           <Error
             error={error}
-            errorColor={"text-primaryOrange"}
+            errorColor={"text-teal-600"}
             errorSize={"text-lg"}
             errorHeight={"h-screen"}
           />

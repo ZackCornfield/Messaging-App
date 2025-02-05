@@ -15,7 +15,7 @@ const MessageInterfaceHeader = ({
   return (
     <header className="flex h-[8%] py-7 items-center gap-3 border-b-[1px] border-zinc-300 px-4">
       <LuArrowLeft
-        className="cursor-pointer text-2xl hover:text-primaryOrange md:hidden"
+        className="cursor-pointer text-2xl hover:text-teal-600 md:hidden"
         onClick={() => {
           setMessagesList(null);
           setIsConversationActive(false);

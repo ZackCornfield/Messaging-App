@@ -33,7 +33,7 @@ const MessagesInterfaceBody = ({
     <>
       {isPending && (
         <Loading
-          loadingColor={"#fa4d12"}
+          loadingColor={"#a2c4c9"}
           loadingSize={45}
           loadingHeight={"h-screen"}
         />
@@ -41,13 +41,13 @@ const MessagesInterfaceBody = ({
       {error && (
         <Error
           error={error}
-          errorColor={"text-primaryOrange"}
+          errorColor={"text-teal-600"}
           errorSize={"text-lg"}
         />
       )}
 
       {isConversationEmpty && (
-        <div className="flex h-full items-center justify-center px-6 text-center text-lg font-semibold text-primaryOrange sm:text-2xl">
+        <div className="flex h-full items-center justify-center px-6 text-center text-lg font-semibold text-teal-600 sm:text-2xl">
           {" "}
           There are no messages in this conversation yet ...
         </div>

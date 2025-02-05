@@ -105,17 +105,17 @@ const UpdateProfileCoverImage = ({
           className="hidden"
         />
         <button
-          className="flex items-center gap-2 rounded border-[1px] border-primaryOrange bg-white px-1.5 py-2 text-sm font-semibold text-[#101828] sm:px-4 sm:text-base"
+          className="flex items-center gap-2 rounded border-[1px] border-teal-600 bg-white px-1.5 py-2 text-sm font-semibold text-[#101828] sm:px-4 sm:text-base"
           onClick={() => {
             inputRef.current.click();
           }}
         >
-          <AiOutlinePlus className="text-primaryOrange" />
+          <AiOutlinePlus className="text-teal-600" />
 
           <span> Upload Image </span>
         </button>
         <button
-          className="flex items-center justify-center rounded bg-primaryOrange px-1.5 py-2 text-sm font-semibold text-white sm:px-4 sm:text-base"
+          className="flex items-center justify-center rounded bg-teal-600 px-1.5 py-2 text-sm font-semibold text-white sm:px-4 sm:text-base"
           onClick={() => {
             uploadImage(previewSource);
           }}

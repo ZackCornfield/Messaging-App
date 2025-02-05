@@ -27,7 +27,7 @@ const SimilarProfiles = () => {
 
   return (
     <ProfileCard cardTitle="Similar profiles">
-      {isPending && <Loading loadingColor={"#fa4d12"} loadingSize={35} />}
+      {isPending && <Loading loadingColor={"#a2c4c9"} loadingSize={35} />}
       {error && (
         <div className="pt-4 text-center text-lg font-semibold text-primaryDark">
           {error}

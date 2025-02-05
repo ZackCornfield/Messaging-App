@@ -101,7 +101,7 @@ const AddMessage = ({
         className={
           messageContent.length === 0
             ? "pointer-events-none text-2xl opacity-30"
-            : "cursor-pointer text-2xl text-primaryOrange"
+            : "cursor-pointer text-2xl text-teal-600"
         }
         onClick={handleAddMessage}
       />

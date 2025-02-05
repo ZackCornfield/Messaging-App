@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 import { useLogin } from "../../hooks/useLogin";
 
 // images
-import logo from "../../assets/images/logo.png";
-import dashboard from "../../assets/images/dashboard-messaging.png";
+import logo from "../../assets/images/logo-blue.svg"; 
+import dashboard from "../../assets/images/preview.png";
 
 // icons
 import { CgProfile } from "react-icons/cg";
@@ -41,7 +41,7 @@ const Login = () => {
 
             <h1 className="text-xl font-extrabold sm:text-3xl">
               {" "}
-              Odin Messaging App
+              Messaging App
             </h1>
           </header>
 
@@ -51,10 +51,10 @@ const Login = () => {
               Welcome back
             </h2>
             <p className="text-justify text-[#475467] sm:text-lg">
-              New to Odin Messaging App?{" "}
+              New to Messaging App?{" "}
               <Link
                 to="/signup"
-                className="cursor-pointer font-bold text-primaryOrange"
+                className="cursor-pointer font-bold text-teal-600"
               >
                 Create an account.{" "}
               </Link>
@@ -86,7 +86,7 @@ const Login = () => {
               />
             </label>
 
-            <button className="flex w-full items-center justify-center rounded-md bg-primaryOrange py-2.5 font-semibold text-white">
+            <button className="flex w-full items-center justify-center rounded-md bg-teal-600 py-2.5 font-semibold text-white">
               {isPending ? (
                 <Loading loadingColor="#ffffff" loadingSize={30} />
               ) : (
@@ -95,11 +95,11 @@ const Login = () => {
             </button>
             <button
               type="button"
-              className="flex w-full items-center justify-center gap-2 rounded-md border-[1px] border-primaryOrange bg-white  py-2.5 font-semibold"
+              className="flex w-full items-center justify-center gap-2 rounded-md border-[1px] border-teal-600 bg-white  py-2.5 font-semibold"
               onClick={handleDemoAccountLogin}
             >
               {" "}
-              <CgProfile className="text-2xl text-primaryOrange" />
+              <CgProfile className="text-2xl text-teal-600" />
               <span>
                 {isDemoPending ? "Logging in ..." : "Try a demo account"}
               </span>
@@ -108,7 +108,7 @@ const Login = () => {
             {error && (
               <Error
                 error={error}
-                errorColor={"text-primaryOrange"}
+                errorColor={"text-teal-600"}
                 errorSize={"text-lg"}
               />
             )}
@@ -116,17 +116,12 @@ const Login = () => {
             {demoError && (
               <Error
                 error={demoError}
-                errorColor={"text-primaryOrange"}
+                errorColor={"text-teal-600"}
                 errorSize={"text-base sm:text-lg"}
               />
             )}
           </form>
         </div>
-      </section>
-
-      {/* Image */}
-      <section className="hidden w-[60%] xl:block">
-        <img src={dashboard} alt="login image" className="h-full w-full " />
       </section>
     </main>
   );

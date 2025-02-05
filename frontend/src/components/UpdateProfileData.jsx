@@ -96,12 +96,12 @@ const UpdateProfileData = ({
       <section className="flex flex-col gap-2 px-2  pb-3">
         <div className="flex w-full items-center justify-between border-b-[1px] border-zinc-200 ">
           {" "}
-          <h4 className="text-xl font-semibold text-primaryOrange sm:text-2xl ">
+          <h4 className="text-xl font-semibold text-teal-600 sm:text-2xl ">
             {" "}
             Personal Information{" "}
           </h4>
           <MdMode
-            className="cursor-pointer hover:text-primaryOrange sm:text-xl "
+            className="cursor-pointer hover:text-teal-600 sm:text-xl "
             onClick={() => {
               setIsUpdatePersonalData(!isUpdatePersonalData);
             }}
@@ -116,7 +116,7 @@ const UpdateProfileData = ({
                 type="text"
                 value={firstName}
                 onChange={(e) => setFirstName(e.target.value)}
-                className="h-4 rounded border-[0.5px] border-slate-300 px-2 py-4 outline-[1px] outline-secondaryOrange sm:px-3 sm:py-5"
+                className="h-4 rounded border-[0.5px] border-slate-300 px-2 py-4 outline-[1px] outline-teal-600 sm:px-3 sm:py-5"
               />
             </label>
 
@@ -126,7 +126,7 @@ const UpdateProfileData = ({
                 type="text"
                 onChange={(e) => setLastName(e.target.value)}
                 value={lastName}
-                className="h-4 rounded border-[0.5px] border-slate-300 px-2 py-4 outline-[1px] outline-secondaryOrange sm:px-3 sm:py-5"
+                className="h-4 rounded border-[0.5px] border-slate-300 px-2 py-4 outline-[1px] outline-teal-600 sm:px-3 sm:py-5"
               />
             </label>
 
@@ -136,7 +136,7 @@ const UpdateProfileData = ({
                 type="email"
                 onChange={(e) => setEmail(e.target.value)}
                 value={email}
-                className="h-4 rounded border-[0.5px] border-slate-300 px-2 py-4 outline-[1px] outline-secondaryOrange sm:px-3 sm:py-5"
+                className="h-4 rounded border-[0.5px] border-slate-300 px-2 py-4 outline-[1px] outline-teal-600 sm:px-3 sm:py-5"
               />
             </label>
           </div>
@@ -156,12 +156,12 @@ const UpdateProfileData = ({
       <section className="flex flex-col gap-2 px-2  pb-3">
         <div className="flex w-full items-center justify-between border-b-[1px] border-zinc-200 ">
           {" "}
-          <h4 className="text-xl font-semibold text-primaryOrange sm:text-2xl ">
+          <h4 className="text-xl font-semibold text-teal-600 sm:text-2xl ">
             {" "}
             Customize Your Intro{" "}
           </h4>
           <MdMode
-            className="cursor-pointer hover:text-primaryOrange sm:text-xl"
+            className="cursor-pointer hover:text-teal-600 sm:text-xl"
             onClick={() => {
               setIsUpdateIntroData(!isUpdateIntroData);
             }}
@@ -176,7 +176,7 @@ const UpdateProfileData = ({
                 type="text"
                 onChange={(e) => setProfession(e.target.value)}
                 value={profession}
-                className="h-4 rounded border-[0.5px] border-slate-300 px-2 py-4 outline-[1px] outline-secondaryOrange sm:px-3 sm:py-5"
+                className="h-4 rounded border-[0.5px] border-slate-300 px-2 py-4 outline-[1px] outline-teal-600 sm:px-3 sm:py-5"
               />
             </label>
 
@@ -186,7 +186,7 @@ const UpdateProfileData = ({
                 type="text"
                 onChange={(e) => setEmployer(e.target.value)}
                 value={employer}
-                className="h-4 rounded border-[0.5px] border-slate-300 px-2 py-4 outline-[1px] outline-secondaryOrange sm:px-3 sm:py-5"
+                className="h-4 rounded border-[0.5px] border-slate-300 px-2 py-4 outline-[1px] outline-teal-600 sm:px-3 sm:py-5"
               />
             </label>
 
@@ -196,7 +196,7 @@ const UpdateProfileData = ({
                 type="text"
                 onChange={(e) => setLocation(e.target.value)}
                 value={location}
-                className="h-4 rounded border-[0.5px] border-slate-300 px-2 py-4 outline-[1px] outline-secondaryOrange sm:px-3 sm:py-5"
+                className="h-4 rounded border-[0.5px] border-slate-300 px-2 py-4 outline-[1px] outline-teal-600 sm:px-3 sm:py-5"
               />
             </label>
 
@@ -217,7 +217,7 @@ const UpdateProfileData = ({
                   })
                 }
                 value={skills[0]}
-                className="h-4 rounded border-[0.5px] border-slate-300 px-2 py-4 outline-[1px] outline-secondaryOrange sm:px-3 sm:py-5"
+                className="h-4 rounded border-[0.5px] border-slate-300 px-2 py-4 outline-[1px] outline-teal-600 sm:px-3 sm:py-5"
               />
               <input
                 type="text"
@@ -234,7 +234,7 @@ const UpdateProfileData = ({
                   })
                 }
                 value={skills[1]}
-                className="h-4 rounded border-[0.5px] border-slate-300 px-2 py-4 outline-[1px] outline-secondaryOrange sm:px-3 sm:py-5"
+                className="h-4 rounded border-[0.5px] border-slate-300 px-2 py-4 outline-[1px] outline-teal-600 sm:px-3 sm:py-5"
               />
               <input
                 type="text"
@@ -251,7 +251,7 @@ const UpdateProfileData = ({
                   })
                 }
                 value={skills[2]}
-                className="h-4 rounded border-[0.5px] border-slate-300 px-2 py-4 outline-[1px] outline-secondaryOrange sm:px-3 sm:py-5"
+                className="h-4 rounded border-[0.5px] border-slate-300 px-2 py-4 outline-[1px] outline-teal-600 sm:px-3 sm:py-5"
               />
             </label>
           </div>
@@ -271,11 +271,11 @@ const UpdateProfileData = ({
         )}
       </section>
       {/* Post Button */}
-      {isPending && <Loading loadingColor={"#fa4d12"} loadingSize={45} />}
+      {isPending && <Loading loadingColor={"#a2c4c9"} loadingSize={45} />}
       {error && <Error error={error} />}
       {!isPending && !error && (
         <footer className="flex items-center justify-center">
-          <button className="flex items-center justify-center rounded bg-primaryOrange px-1.5 py-2 text-sm font-semibold text-white sm:px-4 sm:text-base">
+          <button className="flex items-center justify-center rounded bg-teal-600 px-1.5 py-2 text-sm font-semibold text-white sm:px-4 sm:text-base">
             {" "}
             Save Changes
           </button>

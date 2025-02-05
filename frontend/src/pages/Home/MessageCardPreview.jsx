@@ -83,7 +83,7 @@ const MessageCardPreview = ({
     <article
       className={`${
         isUserSelected
-          ? "border-l-[2.5px] border-l-secondaryOrange bg-lightOrange "
+          ? "border-l-[2.5px] border-l-teal-600 bg-teal-50 "
           : "border-b-[1px] border-zinc-300"
       } flex cursor-pointer items-center gap-3 px-4 py-[21.6px] `}
       onClick={() => {
@@ -104,7 +104,7 @@ const MessageCardPreview = ({
         <div className="flex items-center justify-between">
           <span
             className={`${
-              isUserSelected ? "text-primaryOrange" : ""
+              isUserSelected ? "text-teal-600" : ""
             } font-medium`}
           >
             {user.firstName} {user.lastName}
@@ -124,7 +124,7 @@ const MessageCardPreview = ({
           >
             {previewMessage && <span>{previewMessage}</span>}
           </p>
-          <BsCheck2All className="text-lg text-primaryOrange" />
+          <BsCheck2All className="text-lg text-teal-600" />
         </div>
       </div>
     </article>

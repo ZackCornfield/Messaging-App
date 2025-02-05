@@ -7,7 +7,7 @@
     @apply 2xsm:gap-11 flex items-center justify-center gap-6 text-2xl text-zinc-400 xsm:gap-16 sm:gap-24 xmd:flex-col xmd:gap-8 xmd:pt-6;
   }
   .activeSidebarIcons {
-    @apply flex h-12 w-full cursor-pointer items-center justify-center border-l-[3px] border-secondaryOrange bg-gradient-to-l from-zinc-700/20 from-10% to-secondaryOrange/30 to-90% px-4  text-white;
+    @apply flex h-12 w-full cursor-pointer items-center justify-center border-l-[3px] border-teal-600 bg-gradient-to-l from-zinc-700/20 from-10% to-teal-600/30 to-90% px-4  text-white;
   }
 
   .sidebarIcon {
@@ -28,6 +28,6 @@
 }
 
 .dotted-background {
-  background-image: radial-gradient(rgba(229, 63, 6, 0.3) 1px, transparent 1px);
+  background-image: radial-gradient(rgba(50, 154, 168, 0.3) 1px, transparent 1px);
   background-size: 25px 25px;
 }
