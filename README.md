@@ -35,4 +35,6 @@ Real-time communication is facilitated using **Socket.IO**, ensuring instant mes
   <img src="https://github.com/ZackCornfield/Messaging-App/blob/main/frontend/public/preview_2.png" width="600">
 </p>
 
+**Video**
+
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/OJ8wkiVAFxY/0.jpg)](https://www.youtube.com/watch?v=OJ8wkiVAFxY)
